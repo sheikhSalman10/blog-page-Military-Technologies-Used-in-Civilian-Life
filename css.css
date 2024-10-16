@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #fdf5e6; /* Light cream background */
+    color: #333;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Main heading color */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#searchBar {
+    width: 25%; /* Set the width to 25% of the page */
+    padding: 12px;
+    margin: 20px auto; /* Center it horizontally */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    background-color: #fff5e1; /* Lighter cream input */
+    color: #333;
+    display: block; /* Ensures it behaves as a block element */
+}
+
+#searchBar:focus {
+    border-color: #ffa07a;
+    outline: none;
+}
+
+#techList {
+    max-width: 800px; /* Maximum width for the tech list */
+    margin: 0 auto; /* Centering the tech list */
+}
+
+.tech-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fffaf0; /* Even lighter cream for each item */
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-item:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+    background-color: #ffe4c4; /* Hover effect */
+}
+
+.tech-item b {
+    font-size: 20px;
+    color: #ff4500; /* Attractive heading color */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #searchBar {
+        font-size: 16px;
+    }
+
+    .tech-item b {
+        font-size: 18px;
+    }
+
+    .tech-item {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #searchBar {
+        font-size: 14px;
+    }
+
+    .tech-item b {
+        font-size: 16px;
+    }
+
+    .tech-item {
+        padding: 6px;
+    }
+}
