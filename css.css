@@ -94,3 +94,28 @@ h1 {
         padding: 6px;
     }
 }
+/* Author section in the footer */
+.author-info {
+    background-color: #f9f9f9;     /* Light background for contrast */
+    padding: 20px 0;               /* Padding around the text */
+    text-align: center;            /* Center align the text */
+    border-top: 1px solid #e0e0e0; /* Soft top border for separation */
+}
+
+.author-info p {
+    font-family: Arial, sans-serif;  /* Clean and readable font */
+    font-size: 16px;                 /* Adequate font size for readability */
+    color: #333;                     /* Dark color for contrast */
+    margin: 0;
+}
+
+.author-info strong {
+    color: #007acc;                  /* Highlight the author's name in a nice blue */
+}
+
+@media (max-width: 600px) {
+    .author-info p {
+        font-size: 14px;             /* Smaller text size on mobile */
+    }
+}
+
